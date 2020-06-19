@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="464.0" prefWidth="600.0" style="-fx-background-color: wheat" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GUIController">
+   <children>
+      <Button layoutX="21.0" layoutY="239.0" mnemonicParsing="false" onAction="#StartDataCollection" text="Start Data" />
+      <Button layoutX="157.0" layoutY="239.0" mnemonicParsing="false" onAction="#StartRecording" prefHeight="25.0" prefWidth="123.0" text="Start recording" />
+      <Button layoutX="64.0" layoutY="374.0" mnemonicParsing="false" onAction="#StopEKg" text="Stop" />
+      <TextArea fx:id="EKGDataOutput" layoutX="7.0" layoutY="39.0" prefHeight="200.0" prefWidth="271.0" />
+      <TextField fx:id="CPRField" layoutX="437.0" layoutY="2.0" text="Indtast CPR" />
+      <Button layoutX="7.0" layoutY="15.0" mnemonicParsing="false" onAction="#TilbageTilStart" text="Tilbage" />
+      <Button layoutX="504.0" layoutY="424.0" mnemonicParsing="false" onAction="#loadData" prefHeight="25.0" prefWidth="88.0" text="Load Data" />
+      <LineChart layoutX="175.0" layoutY="299.0" prefHeight="150.0" prefWidth="308.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Polyline fx:id="polyline" layoutX="223.0" layoutY="343.0" onMouseClicked="#ekgKnap" strokeType="INSIDE" />
+      <Button layoutX="5.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#ekgKnap" prefHeight="27.0" prefWidth="170.0" style="-fx-border-color: black;" text="Tegn EKGGRAF:" />
+      <Button layoutX="418.0" layoutY="239.0" mnemonicParsing="false" onAction="#HentEkgData" text="Button" />
+      <TextArea fx:id="ÆgteEKGDataOutput" layoutX="337.0" layoutY="39.0" prefHeight="200.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>

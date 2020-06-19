@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="491.0" prefWidth="714.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GUIController">
+   <children>
+      <Button layoutX="280.0" layoutY="226.0" mnemonicParsing="false" onAction="#TrykStart" prefHeight="51.0" prefWidth="97.0" text="Start" />
+   </children>
+</AnchorPane>
